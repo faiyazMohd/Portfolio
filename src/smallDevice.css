@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Round&display=swap");
+@media only screen and (max-width: 750px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  .innerBackground {
+    z-index: -999;
+    position: fixed;
+    width: 100%;
+    height: 100lvh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #061630;
+  }
+  .outerBackground {
+    z-index: -100;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(
+          35.36% 35.36% at 100% 25%,
+          #0000 66%,
+          #54aec5 68% 70%,
+          #0000 72%
+        )
+        100px 100px / calc(2 * 100px) calc(2 * 100px),
+      radial-gradient(
+          35.36% 35.36% at 0 75%,
+          #0000 66%,
+          #54aec5 68% 70%,
+          #0000 72%
+        )
+        100px 100px / calc(2 * 100px) calc(2 * 100px),
+      radial-gradient(
+          35.36% 35.36% at 100% 25%,
+          #0000 66%,
+          #54aec5 68% 70%,
+          #0000 72%
+        )
+        0 0 / calc(2 * 100px) calc(2 * 100px),
+      radial-gradient(
+          35.36% 35.36% at 0 75%,
+          #0000 66%,
+          #54aec5 68% 70%,
+          #0000 72%
+        )
+        0 0 / calc(2 * 100px) calc(2 * 100px),
+      repeating-conic-gradient(#152f59 0 25%, #0000 0 50%) 0 0 / calc(2 * 100px)
+        calc(2 * 100px),
+      radial-gradient(#0000 66%, #54aec5 68% 70%, #0000 72%) 0 calc(100px / 2) /
+        100px 100px #152f59;
+    /* opacity: 0.03; */
+    opacity: 0.07;
+  }
+  .body {
+    color: #98c6d3;
+    font-family: "Nova Round";
+  }
+  header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header > nav {
+    width: 100%;
+  }
+  header > nav > ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+  }
+  header > nav > ul >a> li {
+    /* margin: 0 1rem; */
+    /* margin-left: 1rem; */
+    font-size: 0.85rem;
+    cursor: pointer;
+    position: relative;
+    /* width: fit-content; */
+    text-wrap: nowrap;
+    width: 1/4;
+    margin: 0;
+    text-shadow: 0.5px 0.5px 0.5px #6ec1d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header > nav > ul > a {
+    text-decoration: none;
+    color: inherit;
+  }
+  header > nav > ul >a> li::after {
+    content: "";
+    background-color: red;
+    border-bottom: 2px solid #6ec1d5;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    left: 0;
+    width: 0;
+  }
+  header > nav > ul >a> li:hover::after {
+    width: 100%;
+    transition: width 200ms linear;
+  }
+
+  /* introduction  section*/
+  .introductionSection {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+  .leftSide div:nth-child(1) {
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  .leftSide div:nth-child(2) {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #648fba;
+    font-family: cursive;
+    /* text-shadow: 1px 1px 1px #6ec1d5; */
+    text-shadow: 1px 1px 1px #5a189a;
+  }
+  .leftSide div:nth-child(3) {
+    font-weight: 500;
+  }
+  .leftSide div:nth-child(4) {
+    font-weight: 500;
+  }
+  .rightSide {
+  }
+  .rightSide > img {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 400px;
+  }
+
+  /* About me section */
+  .aboutSection {
+    width: 100%;
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutmeContent {
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .quote {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #648fba;
+    font-family: cursive;
+    text-shadow: 1px 1px 1px #5a189a;
+  }
+
+  .aboutmeBrief {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /*  Skills section */
+  .skillsSection {
+    width: 100%;
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skillsContainer {
+    max-width: 800px;
+    padding: 20px;
+  }
+  .skillContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem 1.3rem;
+    gap: 2rem 1rem;
+    margin: 1rem 0 1.3rem 0;
+  }
+  .logoImg {
+    width: 3.5rem;
+    /* height: 5rem; */
+  }
+
+  .logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f1b33b;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 60px;
+    height: 65px;
+    min-width: 50px;
+    min-height: 55px;
+    cursor: pointer;
+  }
+  .logoContainer:hover {
+    box-shadow: 0px 0px 9px 2px rgba(110, 193, 213, 0.75);
+  }
+  .jsLogoImg {
+    width: 3rem;
+  }
+  .cssLogoImg {
+    width: 4rem;
+  }
+  .projectsContainer {
+    max-width: 1100px;
+    /* border: 1px solid red; */
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .ProjectItem {
+    background-color: #2e405c27;
+    border: 1px solid #54aec541;
+    backdrop-filter: blur(10px);
+    width: 330px;
+    border-radius: 8px;
+  }
+
+  /* contactme section */
+  .contactmeSection {
+    width: 100%;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactmeContainer {
+    max-width: 800px;
+    padding: 20px;
+  }
+
+  .contactNumberContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .contactIcon {
+    /* width: 15%; */
+  }
+  .contactIcon > img {
+    width: 25px;
+    /* filter: drop-shadow(12px); */
+  }
+  .contactIcon > img:hover {
+    filter: contrast(1.5);
+  }
+  .contactNumber {
+    font-size: 1.25rem;
+    width: 85%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .contactEmailContainer {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+    /* margin-left: 16px; */
+    margin-top: 12px;
+  }
+  .contactEmail {
+    font-size: 1.1rem;
+    width: fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: inherit;
+    /* margin-left: 10px; */
+    text-decoration: none;
+    position: relative;
+    text-shadow: 0.5px 0.5px 0.5px #6ec1d5;
+  }
+
+  .contactEmail::after {
+    content: "";
+    border-bottom: 2px solid #6ec1d5;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    left: 0;
+    width: 0;
+  }
+  .contactEmail:hover::after {
+    /* text-decoration: underline; */
+    width: 100%;
+    transition: width 200ms linear;
+  }
+
+  .contactLinkedinContainer {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+    /* margin-left: 16px; */
+    margin-top: 12px;
+  }
+  .contactLinkedin {
+    font-size: 1.1rem;
+    width: fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    text-shadow: 0.5px 0.5px 0.5px #6ec1d5;
+  }
+
+  .contactLinkedin::after {
+    content: "";
+    border-bottom: 2px solid #6ec1d5;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    left: 0;
+    width: 0;
+  }
+  .contactLinkedin:hover::after {
+    width: 100%;
+    transition: width 200ms linear;
+  }
+
+  .contactGithubContainer {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+    /* margin-left: 16px; */
+    margin-top: 12px;
+  }
+
+  .contactGithub {
+    font-size: 1.1rem;
+    width: fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    text-shadow: 0.5px 0.5px 0.5px #6ec1d5;
+  }
+  .contactGithub::after {
+    content: "";
+    border-bottom: 2px solid #6ec1d5;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    left: 0;
+    width: 0;
+  }
+  .contactGithub:hover::after {
+    width: 100%;
+    transition: width 200ms linear;
+  }
+
+  .locationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 12px;
+  }
+
+  .location {
+    font-size: 1.1rem;
+    /* font-weight: 500; */
+    width: 85%;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  /* project section */
+
+  .projectsContainer {
+    max-width: 1100px;
+    /* border: 1px solid red; */
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .ProjectItem {
+    background-color: #2e405c27;
+    border: 1px solid #54aec541;
+    backdrop-filter: blur(10px);
+    width: 90%;
+    margin: auto;
+    border-radius: 8px;
+  }
+}
