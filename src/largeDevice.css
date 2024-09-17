@@ -252,6 +252,12 @@ header > nav > ul> a > li:hover::after {
 .jsLogoImg {
   width: 4rem;
 }
+.zustandLabel {
+color: #f4511e;
+}
+.ZustandLogoImg {
+  width: 7.5rem;
+}
 .cssLogoImg {
   width: 5.5rem;
 }
@@ -505,4 +511,101 @@ header > nav > ul> a > li:hover::after {
 .textShadowBlue{
   text-shadow: 0.5px 0.5px 0.5px #6ec1d5;
   font-family:  Geneva, Verdana, sans-serif;
+}
+
+/* Experience section */
+.experienceSection {
+  width: 100%;
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.experience-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.experience-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experience-card {
+  margin-bottom: 40px;
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+}
+
+.experience-header {
+  font-size: 28px;
+  font-weight: bold;
+  color: #648fba;
+  text-shadow: 1px 1px 1px #5a189a;
+}
+
+.role-title {
+  font-size: 18px;
+  color: #578cc2;
+  font-family: cursive;
+  text-shadow: 1px 1px 1px #7f2fcf;
+  margin: 5px 0;
+}
+
+.date-range {
+  font-size: 14px;
+  color: #87a0b8;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.experience-details {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.experience-details li {
+  margin-bottom: 4px;
+  list-style: none;
+  text-align: center;
+}
+
+
+.linkContainer {
+  /* margin: 0 1.6rem; */
+  margin: auto;
+  /* margin-left: 3.5rem; */
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  text-shadow: 0.5px 0.5px 0.5px #6ec1d5;
+}
+.linkToExternalWebsite {
+  text-decoration: none;
+  color: inherit;
+}
+.linkContainer::after {
+  content: "";
+  border-bottom: 2px solid #6ec1d5;
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  left: 0;
+  width: 0;
+}
+.linkContainer:hover::after {
+  width: 100%;
+  transition: width 200ms linear;
 }

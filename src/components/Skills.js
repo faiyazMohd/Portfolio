@@ -11,6 +11,9 @@ import expressLogo from "../asssets/png/express.png";
 import jestLogo from "../asssets/png/jest.png";
 import gitLogo from "../asssets/png/git.png";
 import muiLogo from "../asssets/png/mui.png";
+import reactNativeLogo from "../asssets/png/reactNativeLogo.png";
+import nextJsLogo from "../asssets/png/nextJsLogo.png";
+import zustandLogo from "../asssets/png/zustandLogo.png";
 const Skills = () => {
   return (
     <div className="skillsSection"  id="skills">
@@ -21,6 +24,22 @@ const Skills = () => {
             <img className="logoImg" src={reactLogo} alt="" />
           </div>
           <div className="logoContainer">
+            <img className="logoImg" src={reactNativeLogo} alt="" />
+          </div>
+          <div className="logoContainer">
+            <img className="logoImg" src={nextJsLogo} alt="" />
+          </div>
+          <div className="logoContainer">
+            <img className="logoImg" src={reduxLogo} alt="" />
+          </div>
+          <div className="logoContainer">
+            <img className="ZustandLogoImg"src={zustandLogo} alt="" />
+            <span className="zustandLabel">Zustand</span>
+          </div>
+          
+        </div>
+        <div className="skillContent">
+        <div className="logoContainer">
             <span>Javascript</span>
             <img className="jsLogoImg" src={jsLogo} alt="" />
           </div>
@@ -30,22 +49,22 @@ const Skills = () => {
           <div className="logoContainer">
             <img className="cssLogoImg" src={cssLogo} alt="" />
           </div>
-        </div>
-        <div className="skillContent">
+          
           <div className="logoContainer">
-            <img className="logoImg" src={reduxLogo} alt="" />
+            <img className="logoImg" src={tailwindcssLogo} alt="" />
           </div>
           <div className="logoContainer">
+            <img className="logoImg" src={muiLogo} alt="" />
+          </div>
+          
+        </div>
+        <div className="skillContent">
+        <div className="logoContainer">
             <img className="logoImg" src={nodeLogo} alt="" />
           </div>
           <div className="logoContainer">
             <img className="logoImg" src={mongoDbLogo} alt="" />
           </div>
-          <div className="logoContainer">
-            <img className="logoImg" src={tailwindcssLogo} alt="" />
-          </div>
-        </div>
-        <div className="skillContent">
           <div className="logoContainer">
             <img className="logoImg" src={expressLogo} alt="" />
           </div>
@@ -55,9 +74,7 @@ const Skills = () => {
           <div className="logoContainer">
             <img className="logoImg" src={gitLogo} alt="" />
           </div>
-          <div className="logoContainer">
-            <img className="logoImg" src={muiLogo} alt="" />
-          </div>
+          
         </div>
       </div>
     </div>
