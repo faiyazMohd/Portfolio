@@ -5,6 +5,54 @@ const Experience = () => {
     <div className="experienceSection" id="experience">
       <div className="sectionTitle">&lt;Experience/&gt;</div>
       {/* Experience Card 1 */}
+        <div className="experience-card ">
+        <div>
+          <h3 className="experience-header ">
+            <div className="linkContainer">
+              <a
+                className="linkToExternalWebsite"
+                target="_blank"
+                href="https://www.boppotechnologies.com/"
+              >
+                GBIM Technologies Pvt Ltd.
+              </a>
+            </div>
+          </h3>
+          <div className="role-title">Frontend Developer</div>
+          <div className="date-range">Mar 2025 – Present</div>
+        </div>
+
+        <ul className="experience-details">
+          <li>
+            Contributed to the development of{" "}
+            <span className="linkContainer">
+              <a
+                className="linkToExternalWebsite"
+                target="_blank"
+                href="https://keydemand.in/"
+              >
+                DMCockpit
+              </a>
+            </span>
+            , a scalable and data-driven digital marketing platform featuring
+            tools like Website Rank Checker, Website Audit, Analytics &
+            Reporting, Performance Marketing, Social Media Scheduling &
+            Insights, and Competitor Analysis.
+          </li>
+          <li>
+            Developed a complex interactive dashboard using Next.js and
+            React.js, enabling real-time data visualization and delivering a
+            smooth, intuitive user experience.
+          </li>
+          <li>
+            Optimized the application architecture to support future feature
+            expansions, enhancing maintainability and reducing development time
+            for new features.
+          </li>
+        </ul>
+      </div>
+      {/* Experience Card 2 */}
+
       <div className="experience-card ">
         <div>
           <h3 className="experience-header ">
@@ -19,12 +67,12 @@ const Experience = () => {
             </div>
           </h3>
           <div className="role-title">Software Developer</div>
-          <div className="date-range">Dec 2023 – Present</div>
+          <div className="date-range">Dec 2023 – Jan 2025</div>
         </div>
 
         <ul className="experience-details">
           <li>
-            Managed the development of {" "} 
+            Managed the development of{" "}
             <span className="linkContainer">
               <a
                 className="linkToExternalWebsite"
@@ -34,9 +82,9 @@ const Experience = () => {
                 Keydemand
               </a>
             </span>
-            , a scalable and complex real estate website with a
-            sophisticated admin panel built using React.js, ensuring timely
-            delivery and alignment with client expectations.
+            , a scalable and complex real estate website with a sophisticated
+            admin panel built using React.js, ensuring timely delivery and
+            alignment with client expectations.
           </li>
           <li>
             Collaborated with cross-functional teams to solve technical
@@ -53,6 +101,8 @@ const Experience = () => {
           </li>
         </ul>
       </div>
+
+    
     </div>
   );
 };

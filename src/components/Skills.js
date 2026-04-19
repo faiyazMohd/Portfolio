@@ -14,6 +14,7 @@ import muiLogo from "../asssets/png/mui.png";
 import reactNativeLogo from "../asssets/png/reactNativeLogo.png";
 import nextJsLogo from "../asssets/png/nextJsLogo.png";
 import zustandLogo from "../asssets/png/zustandLogo.png";
+import typescriptLogo from "../asssets/png/typescript.png";
 const Skills = () => {
   return (
     <div className="skillsSection"  id="skills">
@@ -29,13 +30,13 @@ const Skills = () => {
           <div className="logoContainer">
             <img className="logoImg" src={nextJsLogo} alt="" />
           </div>
+           <div className="logoContainer">
+            <img className="logoImg" src={typescriptLogo} alt="" />
+          </div>  
           <div className="logoContainer">
             <img className="logoImg" src={reduxLogo} alt="" />
           </div>
-          <div className="logoContainer">
-            <img className="ZustandLogoImg"src={zustandLogo} alt="" />
-            <span className="zustandLabel">Zustand</span>
-          </div>
+         
           
         </div>
         <div className="skillContent">
@@ -53,9 +54,14 @@ const Skills = () => {
           <div className="logoContainer">
             <img className="logoImg" src={tailwindcssLogo} alt="" />
           </div>
-          <div className="logoContainer">
-            <img className="logoImg" src={muiLogo} alt="" />
+          
+           <div className="logoContainer">
+            <img className="ZustandLogoImg"src={zustandLogo} alt="" />
+            <span className="zustandLabel">Zustand</span>
           </div>
+          {/* <div className="logoContainer">
+            <img className="logoImg" src={muiLogo} alt="" />
+          </div> */}
           
         </div>
         <div className="skillContent">
